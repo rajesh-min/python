@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2025-06-23 02:15:42</p>
+                <p class='attribute'><strong>Duration: </strong>15.00 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.FlipkartTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_search_and_add_to_cart</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Login popup did not appear.
+</p><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='_4rR01T']"}
+  (Session info: chrome=137.0.7151.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff71b4dcda5+78885]
+	GetHandleVerifier [0x0x7ff71b4dce00+78976]
+	(No symbol) [0x0x7ff71b299bca]
+	(No symbol) [0x0x7ff71b2f0766]
+	(No symbol) [0x0x7ff71b2f0a1c]
+	(No symbol) [0x0x7ff71b344467]
+	(No symbol) [0x0x7ff71b318bcf]
+	(No symbol) [0x0x7ff71b34122f]
+	(No symbol) [0x0x7ff71b318963]
+	(No symbol) [0x0x7ff71b2e16b1]
+	(No symbol) [0x0x7ff71b2e2443]
+	GetHandleVerifier [0x0x7ff71b7b4eed+3061101]
+	GetHandleVerifier [0x0x7ff71b7af33d+3037629]
+	GetHandleVerifier [0x0x7ff71b7ce592+3165202]
+	GetHandleVerifier [0x0x7ff71b4f730e+186766]
+	GetHandleVerifier [0x0x7ff71b4feb3f+217535]
+	GetHandleVerifier [0x0x7ff71b4e59b4+114740]
+	GetHandleVerifier [0x0x7ff71b4e5b69+115177]
+	GetHandleVerifier [0x0x7ff71b4cc368+10728]
+	BaseThreadInitThunk [0x0x7ffbea94259d+29]
+	RtlUserThreadStart [0x0x7ffbeb72af58+40]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\VS code Project\Sample.py", line 34, in test_search_and_add_to_cart
+    first_product = driver.find_element(By.XPATH, "//div[@class='_4rR01T']")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raj96\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raj96\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\raj96\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='_4rR01T']"}
+  (Session info: chrome=137.0.7151.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff71b4dcda5+78885]
+	GetHandleVerifier [0x0x7ff71b4dce00+78976]
+	(No symbol) [0x0x7ff71b299bca]
+	(No symbol) [0x0x7ff71b2f0766]
+	(No symbol) [0x0x7ff71b2f0a1c]
+	(No symbol) [0x0x7ff71b344467]
+	(No symbol) [0x0x7ff71b318bcf]
+	(No symbol) [0x0x7ff71b34122f]
+	(No symbol) [0x0x7ff71b318963]
+	(No symbol) [0x0x7ff71b2e16b1]
+	(No symbol) [0x0x7ff71b2e2443]
+	GetHandleVerifier [0x0x7ff71b7b4eed+3061101]
+	GetHandleVerifier [0x0x7ff71b7af33d+3037629]
+	GetHandleVerifier [0x0x7ff71b7ce592+3165202]
+	GetHandleVerifier [0x0x7ff71b4f730e+186766]
+	GetHandleVerifier [0x0x7ff71b4feb3f+217535]
+	GetHandleVerifier [0x0x7ff71b4e59b4+114740]
+	GetHandleVerifier [0x0x7ff71b4e5b69+115177]
+	GetHandleVerifier [0x0x7ff71b4cc368+10728]
+	BaseThreadInitThunk [0x0x7ffbea94259d+29]
+	RtlUserThreadStart [0x0x7ffbeb72af58+40]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 15.00 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
