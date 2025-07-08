@@ -43,7 +43,7 @@ class FlipkartTest(unittest.TestCase):
         # Click Add to Cart
         try:
             add_to_cart = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(),'Add to cart')]")))
-            add_to_cart.click() #a
+            add_to_cart.click() #08.07.2025
             print("✅ Product added to cart.")
         except:
             self.fail("❌ Add to cart button not found or page layout different.")
